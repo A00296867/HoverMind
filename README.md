@@ -11,17 +11,21 @@ Initially, the drone will be controlled using a Bluetooth module (HC-05/HC-06) a
 ✅ Search & Rescue Capabilities
 Uses thermal imaging and GPS to locate survivors in disaster zones.
 Capable of carrying and delivering emergency supplies to designated locations.
+
 ✅ Control System
 Phase 1: Bluetooth-based control via a custom mobile app.
 Phase 2 (If Needed): Integration of an RC transmitter & receiver for extended range.
 Failsafe system to ensure the drone lands safely if communication is lost.
+
 ✅ Autonomous Flight & Navigation
 MPU6050 IMU for stability and motion tracking.
 PID-based motor control for smooth and responsive flight.
 Altitude and position monitoring for precise movement.
+
 ✅ Live Telemetry & Monitoring
 Real-time data transmission for battery status, altitude, and position tracking.
 Mobile app interface for easy monitoring and control.
+
 📡 Technology Stack
 🛠 Hardware Components
 Flight Controller: Arduino-based system
@@ -29,11 +33,13 @@ Sensors: MPU6050 IMU, GPS, Thermal Camera (for future integration)
 Communication: HC-05/HC-06 Bluetooth module, optional 2.4 GHz RC system
 Motors & ESCs: Brushless motors with ESCs for efficient flight
 Battery: LiPo battery for power efficiency
+
 💻 Software & Frameworks
 Arduino C++ for drone control logic
 PID algorithm for flight stability
 Mobile App (Android/iOS) for Bluetooth-based control and telemetry
 Failsafe mechanism to ensure emergency landing in case of connection loss
+
 🚀 Development Roadmap
 Phase 1: Bluetooth-Based Drone Control
 ✔ Setup Bluetooth module (HC-05/HC-06) and integrate with Arduino.
@@ -55,6 +61,7 @@ Devika Vinod	Software Development
 Alwin Antony	Testing & QA
 Alister Jaison	Software Development
 Sanjay Basil	Hardware Integration
+
 📌 How to Get Started
 1️⃣ Hardware Setup
 Connect the Bluetooth module (HC-05/HC-06) to the flight controller.
