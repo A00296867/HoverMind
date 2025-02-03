@@ -106,6 +106,8 @@ Implement failsafe landing in case of Bluetooth disconnection.
 
 🔹 Add real-time streaming from thermal camera to detect survivors.
 
+# Basic architecture of the drone
+![Image](https://github.com/user-attachments/assets/55910279-b5f2-4f1e-aa9f-420208281d9d)
 
 # Simple Quadcopter Data Flow Diagram with Single Radio Controller
 
