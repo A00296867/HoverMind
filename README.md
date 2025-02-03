@@ -98,8 +98,12 @@ Verify motor response to app controls.
 Tune PID values for stable hovering and movement.
 Implement failsafe landing in case of Bluetooth disconnection.
 📢 Future Enhancements
+
 🔹 Upgrade to Wi-Fi or 4G/5G control for long-range operation.
+
 🔹 Implement computer vision for intelligent obstacle avoidance.
+
 🔹 Add real-time streaming from thermal camera to detect survivors.
+
 
 ![Image](https://github.com/user-attachments/assets/2ed07bf8-0395-49fd-9b5b-824709bce290)
