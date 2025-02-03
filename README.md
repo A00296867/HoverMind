@@ -8,6 +8,7 @@ This project aims to develop an autonomous search and rescue drone that can assi
 Initially, the drone will be controlled using a Bluetooth module (HC-05/HC-06) and a mobile app for short-range testing. If Bluetooth proves unreliable, we will transition to a radio transmitter and receiver system for better range and stability.
 
 🔹 Features & Functionality
+
 ✅ Search & Rescue Capabilities
 Uses thermal imaging and GPS to locate survivors in disaster zones.
 Capable of carrying and delivering emergency supplies to designated locations.
