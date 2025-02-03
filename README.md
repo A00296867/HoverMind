@@ -42,17 +42,27 @@ Failsafe mechanism to ensure emergency landing in case of connection loss
 
 🚀 Development Roadmap
 Phase 1: Bluetooth-Based Drone Control
+
 ✔ Setup Bluetooth module (HC-05/HC-06) and integrate with Arduino.
+
 ✔ Develop a simple mobile app for sending throttle, roll, pitch, and yaw commands.
+
 ✔ Test motor response to mobile commands and implement failsafe auto-landing.
 
+
 Phase 2: Flight Stabilization & Autonomous Navigation
+
 ✔ Implement PID control for smooth and stable flight.
+
 ✔ Integrate altitude monitoring and position tracking.
 
+
 Phase 3: Advanced Features & Long-Range Communication
+
 ✔ Expand control range using RC transmitter & receiver if Bluetooth is insufficient.
+
 ✔ Add thermal imaging & GPS tracking for automated rescue missions.
+
 
 👥 Team Members
 Name	Role
@@ -63,15 +73,21 @@ Alister Jaison	Software Development
 Sanjay Basil	Hardware Integration
 
 📌 How to Get Started
+
 1️⃣ Hardware Setup
+
 Connect the Bluetooth module (HC-05/HC-06) to the flight controller.
 Attach motors, ESCs, and power module.
 Ensure all connections are secure and tested.
+
 2️⃣ Software Setup
+
 Install Arduino IDE and required libraries.
 Upload flight control and Bluetooth communication code to Arduino.
 Pair the mobile app with the Bluetooth module.
+
 3️⃣ Testing & Calibration
+
 Verify motor response to app controls.
 Tune PID values for stable hovering and movement.
 Implement failsafe landing in case of Bluetooth disconnection.
