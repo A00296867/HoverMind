@@ -66,11 +66,17 @@ Phase 3: Advanced Features & Long-Range Communication
 
 👥 Team Members
 Name	Role
+
 Harisanker Sureshkumar Uma	Project Coordinator & Electronics
+
 Devika Vinod	Software Development
+
 Alwin Antony	Testing & QA
+
 Alister Jaison	Software Development
+
 Sanjay Basil	Hardware Integration
+
 
 📌 How to Get Started
 
