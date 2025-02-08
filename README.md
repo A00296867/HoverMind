@@ -116,3 +116,7 @@ Implement failsafe landing in case of Bluetooth disconnection.
 # YMFC_Schematic
 
 ![Image](https://github.com/user-attachments/assets/f2ece7d7-cca2-470e-a858-cf4e85fdd1ad)
+
+# Way to control drone using smartphone
+
+https://youtu.be/eDDdNAw7GqQ?si=brWKFNLE81Xn3_XE
