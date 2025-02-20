@@ -1,4 +1,3 @@
-https://github.com/br3ttb/Arduino-PID-Library/blob/master/PID_v1.h
 This repository contains a Proportional-Integral-Derivative (PID) Controller implementation designed for drone stabilization and flight control. PID control is essential for maintaining balance, stability, and responsiveness in drones by continuously adjusting motor speeds based on sensor feedback.
 
 🔗 Source Code: [https://github.com/br3ttb/Arduino-PID-Library/blob/master/PID_v1.h]
