@@ -1,0 +1,73 @@
+# Facial Recognition Study Material 📚  
+
+This document contains useful resources for understanding and working with facial recognition technology.  
+
+🔗 **Study Material:** [https://github.com/exadel-inc/CompreFace]  
+
+## Overview  
+An in-depth guide covering facial recognition concepts, tools, and practical applications.  
+
+## Screenshots  
+Visual demonstrations and examples of the system in action.  
+
+## Video Tutorials  
+Step-by-step tutorials to help users understand facial recognition implementation.  
+
+## News and Updates  
+Latest developments and improvements in facial recognition technology.  
+
+## Features & Functionalities  
+- Core features of the facial recognition system  
+- Supported functionalities and enhancements  
+
+## Getting Started with CompreFace  
+A beginner’s guide to setting up and using CompreFace.  
+
+## CompreFace SDKs  
+Information on available SDKs for integrating facial recognition into applications.  
+
+## Documentation  
+Detailed technical documentation for developers and users.  
+
+## How to Use CompreFace  
+Guidelines and best practices for effective usage.  
+
+## Face Services and Plugins  
+- Available face-related services  
+- Supported plugins and integrations  
+
+## REST API Description  
+Comprehensive API documentation for developers.  
+
+## Postman Documentation & Collection  
+Pre-built Postman collections for API testing and integration.  
+
+## Face Recognition Similarity Threshold  
+Explanation of how similarity thresholds work in facial recognition.  
+
+## Configuration  
+Guides on configuring the system for optimal performance.  
+
+## Architecture and Scalability  
+Details on system architecture and scaling options.  
+
+## Custom Builds  
+Instructions for creating customized versions.  
+
+## Face Data Migration  
+How to migrate facial data between systems.  
+
+## User Roles System  
+Understanding the role-based access system in CompreFace.  
+
+## Face Mask Detection Plugin  
+Details on the face mask detection feature.  
+
+## Kubernetes Configuration  
+Guide to deploying on Kubernetes.  
+
+## Gathering Anonymous Statistics  
+Information on how the system collects and handles anonymous statistics.  
+
+## Installation Options  
+Different methods for installing and setting up the system. 
