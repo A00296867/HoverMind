@@ -1,0 +1,26 @@
+https://github.com/br3ttb/Arduino-PID-Library/blob/master/PID_v1.h
+This repository contains a Proportional-Integral-Derivative (PID) Controller implementation designed for drone stabilization and flight control. PID control is essential for maintaining balance, stability, and responsiveness in drones by continuously adjusting motor speeds based on sensor feedback.
+
+🔗 Source Code: [https://github.com/br3ttb/Arduino-PID-Library/blob/master/PID_v1.h]
+
+Features
+
+Precise Flight Control: Adjusts motor speeds to maintain stable flight.
+Automatic & Manual Modes: Switch between auto-stabilization and manual tuning
+Customizable PID Parameters: Fine-tune Kp (Proportional), Ki (Integral), and Kd (Derivative) values
+Direct & Reverse Control: Supports different drone configurations
+Adjustable Sampling Time: Optimize the PID loop execution for real-time drone control
+Functions
+Compute(): Executes PID calculations to adjust motor outputs
+SetMode(int Mode): Switch between Automatic (stabilization mode) and Manual
+SetOutputLimits(double min, double max): Restrict motor power output
+SetTunings(double Kp, double Ki, double Kd): Adjust PID gains for optimal performance
+SetControllerDirection(int direction): Define control direction for drone orientation
+SetSampleTime(int time): Adjusts the PID loop execution frequency
+Application in Drones
+
+This PID controller helps in:
+✅ Stabilizing the drone mid-flight
+✅ Correcting angular deviations using gyroscope and accelerometer data
+✅ Controlling pitch, roll, and yaw for smooth maneuvering
+✅ Ensuring steady hover and responsive movements
