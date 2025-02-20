@@ -1,0 +1,28 @@
+Flask-based web server designed to facilitate communication between the drone and external systems. Flask is a lightweight and efficient web framework that enables seamless data exchange between the drone's onboard controller and a remote client, such as a ground control station or a web dashboard.
+
+🔗 Source Code: [https://flask.palletsprojects.com/en/stable/]
+
+Features
+✅ Real-time Communication: Enables data exchange between the drone and external applications
+✅ RESTful API Support: Handles HTTP requests for telemetry, control commands, and data retrieval
+✅ Web-Based Interface: Allows remote monitoring and control of the drone
+✅ Integration with Sensors: Sends and receives data from onboard sensors (e.g., GPS, IMU, camera)
+✅ Lightweight & Scalable: Runs efficiently on low-power devices like Raspberry Pi or embedded systems
+
+API Endpoints
+GET /status → Retrieves the current drone status (battery, altitude, GPS, etc.)
+POST /control → Sends flight commands (takeoff, land, move, etc.)
+GET /telemetry → Fetches real-time sensor data from the drone
+POST /settings → Updates PID or flight control parameters dynamically
+
+How It Works
+Drone Sends Data: The Flask server collects data from the drone’s sensors and flight controller.
+Client Requests Information: Ground control or a web dashboard makes API requests for telemetry and control.
+Commands Sent to Drone: Users can send movement or configuration commands through the API.
+Real-time Response: The Flask server processes requests and sends back responses in real-time.
+
+Applications
+🚀 Remote drone monitoring via a web dashboard
+🚀 Sending flight commands from a ground station
+🚀 Logging flight data for analysis
+🚀 Integrating AI-based decision-making for autonomous drones
