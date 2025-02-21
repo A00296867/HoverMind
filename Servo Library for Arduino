@@ -1,0 +1,28 @@
+Arduino Servo Library, used for controlling servo motors in drone applications. Servo motors are essential for gimbal stabilization, camera control, landing gear movement, and other precision adjustments in drones.
+
+🔗 Source Code: [https://github.com/arduino-libraries/Servo]
+
+Features
+✅ Precise Servo Control: Adjust servo position with high accuracy
+✅ Supports Multiple Servos: Control multiple servos simultaneously
+✅ Angle Control (0° - 180°): Smooth and stable servo positioning
+✅ PWM-based Control: Uses PWM signals to adjust servo position
+✅ Lightweight & Efficient: Works on Arduino and other microcontrollers
+
+Functions
+attach(pin): Attaches a servo motor to a specific Arduino pin
+write(angle): Moves the servo to the specified angle (0° - 180°)
+writeMicroseconds(value): Sends a microsecond value (for fine control)
+read(): Gets the current servo angle
+detach(): Stops controlling the servo to free up the pin
+
+Application in Drones
+🚁 Gimbal Stabilization: Smooth camera movements for aerial photography
+🚁 Camera Pan & Tilt: Adjusts camera angle for better vision
+🚁 Landing Gear Control: Retractable landing systems for drones
+🚁 Aerodynamic Adjustments: Servo-based control surfaces for better maneuvering
+
+How to Use
+Connect the servo signal wire to an Arduino PWM pin.
+Use the Servo library functions to control the servo movement.
+Adjust angles dynamically based on sensor inputs or user commands.
