@@ -65,6 +65,44 @@ Phase 3: Advanced Features & Long-Range Communication
 ✔ Add thermal imaging & GPS tracking for automated rescue missions.
 
 
+phase 4: 
+The drone uses facial recognition technology to identify and approach a person in need, delivering a payload to the target. The system is designed to be fully automated, with the drone controlling flight and facial recognition independently.
+
+Features
+Facial Recognition: The drone is equipped with facial recognition technology to detect and identify a specific person.
+Autonomous Flight: The drone can fly upwards, search for the target face, and automatically navigate toward the identified individual.
+Payload Delivery: Once the target is identified, the drone drops a payload at the person’s location.
+Hardware
+Drone: Chubory A68 Brushless Drone
+Arduino: Used for interfacing with the drone's joystick to automate flight control
+Joystick: Reverse-engineered to interface with the Arduino for flight control
+Current Progress
+Joystick Integration: The team is currently investigating and reverse-engineering the joystick to reconnect it with the Arduino for automated control of the drone.
+Facial Recognition: The facial recognition system is being tested and integrated with the drone’s flight control.
+Installation and Setup
+Hardware Requirements:
+
+Chubory A68 Brushless Drone
+Arduino (e.g., Arduino Uno or Mega)
+Joystick module (for reverse-engineering)
+Camera module for facial recognition
+Payload (e.g., a small kit or package)
+Software Requirements:
+
+Arduino IDE (for programming the Arduino)
+Facial recognition software (e.g., OpenCV or a similar library)
+Additional libraries for drone control (depending on the drone’s system)
+Setup Instructions:
+
+Install the Arduino IDE and the necessary libraries for drone control and facial recognition.
+Connect the joystick to the Arduino and reverse-engineer the connection to enable automated flight control.
+Integrate the facial recognition system to control the drone’s navigation.
+Future Improvements
+Enhance the facial recognition system for better accuracy.
+Optimize the drone’s flight capabilities for more precise movements.
+Implement additional payload features (e.g., different types of rescue kits).
+
+
 👥 Team Members
 Name	Role
 
@@ -120,3 +158,5 @@ Implement failsafe landing in case of Bluetooth disconnection.
 # Way to control drone using smartphone
 
 https://youtu.be/eDDdNAw7GqQ?si=brWKFNLE81Xn3_XE
+
+
