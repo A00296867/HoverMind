@@ -1,0 +1,72 @@
+import os
+from compreface import CompreFace
+from compreface.service import RecognitionService, DetectionService
+
+# API details
+DOMAIN = "http://localhost"
+PORT = "8000"
+
+# API Keys
+RECOGNITION_API_KEY = "ce5b003c-d04f-448e-93e4-1e21b0915455"
+DETECTION_API_KEY = "abd7819e-104e-4d42-ba6a-f11951be598d"
+
+# Initialize CompreFace services
+compre_face = CompreFace(DOMAIN, PORT)
+recognition_service = compre_face.init_face_recognition(RECOGNITION_API_KEY)
+detection_service = compre_face.init_face_detection(DETECTION_API_KEY)
+
+# Paths (YOUR LOCATIONS)
+stored_face_image = r"C:\Users\alist\OneDrive\Pictures\Camera Roll\WIN_20240916_14_27_12_Pro.jpg"
+test_images_folder = r"C:\Users\alist\OneDrive\Desktop\drone img"
+subject_name = 'Target_Person'  # Make sure this matches what you used when adding your face
+
+# Step 1: Add the reference face
+face_collection = recognition_service.get_face_collection()
+response = face_collection.add(image_path=stored_face_image, subject=subject_name)
+print(f"Reference Face Added: {response}")
+
+# Step 2: Load test images
+if not os.path.isdir(test_images_folder):
+    print(f"❌ Folder not found: {test_images_folder}")
+    exit()
+
+image_files = [
+    os.path.join(test_images_folder, f)
+    for f in os.listdir(test_images_folder)
+    if f.lower().endswith(('jpeg', 'jpg', 'png'))
+]
+
+if not image_files:
+    print(f"❌ No images found in {test_images_folder}")
+    exit()
+
+print("\n✅ Comparison Results:")
+for image_path in image_files:
+    image_name = os.path.basename(image_path)
+    try:
+        recognition_response = recognition_service.recognize(image_path=image_path)
+        matches = recognition_response.get("result", [])
+
+        if not matches:
+            print(f"Image: {image_name} | Similarity: 0.0% (No faces detected)")
+            continue
+
+        found = False
+        for face in matches:
+            for subject_match in face.get("subjects", []):
+                subject = subject_match.get("subject", "Unknown")
+                similarity_percent = subject_match.get("similarity", 0) * 100
+
+                if similarity_percent >= 80:
+                    tag = "   <- This is your face" if subject == subject_name else ""
+                    print(f"Image: {image_name} | Subject: {subject} | Similarity: {similarity_percent:.1f}%{tag}")
+                    found = True
+                    break
+            if found:
+                break
+
+        if not found:
+            print(f"Image: {image_name} | Similarity: 0.0%")
+
+    except Exception as e:
+        print(f"❌ Error processing {image_name}: {e}")
